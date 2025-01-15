@@ -105,7 +105,7 @@ video{
 }
 
 #page2{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     z-index: 10;
 }
@@ -155,3 +155,98 @@ video{
       transform: translateX(-100%);
     }
   }
+
+#about-us{
+    margin-top: 50px;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    padding: 0 50px;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    justify-content: space-around;
+}  
+
+#about-us img{
+    height: 220px;
+    width: 220px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+#about-us-bw {
+    width: 50%;
+    text-align: center;
+}
+
+#about-us-bw h3 {
+    font-size: 54px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+#about-us-bw p {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+#card-container{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+    z-index: 10;
+}
+
+.card{
+    height: 80%;
+    width: 24%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+#card1{
+    background-image: url(Resources/card1.jpg);
+}
+
+#card2{
+    background-image: url(Resources/card2.jpg);
+}
+
+#card3{
+    background-image: url(Resources/card3.jpg);
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #95c11e;
+    padding: 30px;
+    padding-top: 70px;
+    opacity: 0;
+    transition: all ease 0.2s;
+    text-align: center;
+}
+
+.overlay h3{
+    color: #000;
+    font-size: 20px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.overlay p {
+    color: #000;
+    font-size: 16px;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
