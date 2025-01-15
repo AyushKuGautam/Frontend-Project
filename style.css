@@ -112,6 +112,8 @@ video{
 
 #scroller{
     white-space: nowrap;
+    overflow-x: auto;
+  overflow-y: hidden;
     position: relative;
     z-index: 10;
 }
